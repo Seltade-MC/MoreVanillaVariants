@@ -3,7 +3,6 @@ package com.github.seltademc.item;
 import com.github.seltademc.MoreVanillaVariants;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -20,6 +19,7 @@ public class ModItems {
     public static final Item MANGROVE_STICK = registerItem( "mangrove_stick", new Item(new Item.Settings()));
     public static final Item SPRUCE_STICK = registerItem( "spruce_stick", new Item(new Item.Settings()));
     public static final Item WARPED_STICK = registerItem( "warped_stick", new Item(new Item.Settings()));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(MoreVanillaVariants.MOD_ID, name), item);
     }
