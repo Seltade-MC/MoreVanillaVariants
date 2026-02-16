@@ -1,6 +1,5 @@
 package com.github.seltademc;
 
-import com.github.seltademc.block.ModBlocks;
 import com.github.seltademc.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -16,6 +15,5 @@ public class MoreVanillaVariants implements ModInitializer {
     @Override
     public void onInitialize() {
         ModItems.registerModItems();
-        ModBlocks.registerModBlocks();
     }
 }
