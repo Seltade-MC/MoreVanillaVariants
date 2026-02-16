@@ -1,4 +1,4 @@
-package com.github.seltademc.datagen;
+package com.github.seltademc.data;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;

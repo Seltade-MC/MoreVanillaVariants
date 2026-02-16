@@ -1,4 +1,4 @@
-package com.github.seltademc.datagen;
+package com.github.seltademc.data;
 
 import com.github.seltademc.MoreVanillaVariants;
 import com.github.seltademc.item.ModItems;

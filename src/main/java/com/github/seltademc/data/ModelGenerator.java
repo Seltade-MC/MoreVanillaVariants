@@ -1,4 +1,4 @@
-package com.github.seltademc.datagen;
+package com.github.seltademc.data;
 
 import com.github.seltademc.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;

@@ -1,6 +1,6 @@
 package com.github.seltademc;
 
-import com.github.seltademc.datagen.*;
+import com.github.seltademc.data.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
