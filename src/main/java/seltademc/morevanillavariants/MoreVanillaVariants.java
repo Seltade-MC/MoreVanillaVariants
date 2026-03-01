@@ -1,6 +1,6 @@
-package seltademc;
+package seltademc.morevanillavariants;
 
-import seltademc.item.ModItems;
+import seltademc.morevanillavariants.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;

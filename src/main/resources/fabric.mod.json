@@ -17,8 +17,8 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"seltademc.MoreVanillaVariants"
-		],
+			"seltademc.morevanillavariants.MoreVanillaVariants"
+		]
 	},
 	"mixins": [
 		"more-vanilla-variants.mixins.json"

@@ -1,6 +1,6 @@
-package seltademc.item;
+package seltademc.morevanillavariants.item;
 
-import seltademc.MoreVanillaVariants;
+import seltademc.morevanillavariants.MoreVanillaVariants;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
