@@ -1,43 +1,39 @@
 package seltademc.morevanillavariants.item;
 
-import seltademc.morevanillavariants.MoreVanillaVariants;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.CreativeModeTabs;
+import seltademc.morevanillavariants.MoreVanillaVariants;
+import net.minecraft.world.item.Item;
+import static net.minecraft.world.item.Items.registerItem;
 
 public class ModItems {
 
-    public static final Item ACACIA_STICK = registerItem( "acacia_stick", new Item(new Item.Settings()));
-    public static final Item BIRCH_STICK = registerItem( "birch_stick", new Item(new Item.Settings()));
-    public static final Item CHERRY_STICK = registerItem( "cherry_stick", new Item(new Item.Settings()));
-    public static final Item CRIMSON_STICK = registerItem( "crimson_stick", new Item(new Item.Settings()));
-    public static final Item DARK_OAK_STICK = registerItem( "dark_oak_stick", new Item(new Item.Settings()));
-    public static final Item JUNGLE_STICK = registerItem( "jungle_stick", new Item(new Item.Settings()));
-    public static final Item MANGROVE_STICK = registerItem( "mangrove_stick", new Item(new Item.Settings()));
-    public static final Item PALE_OAK_STICK = registerItem( "pale_oak_stick", new Item(new Item.Settings()));
-    public static final Item SPRUCE_STICK = registerItem( "spruce_stick", new Item(new Item.Settings()));
-    public static final Item WARPED_STICK = registerItem( "warped_stick", new Item(new Item.Settings()));
+    public static final Item ACACIA_STICK = registerItem(ResourceLocation.fromNamespaceAndPath(MoreVanillaVariants.MOD_ID, "acacia_stick"), new Item(new Item.Properties()));
+    public static final Item BIRCH_STICK = registerItem(ResourceLocation.fromNamespaceAndPath(MoreVanillaVariants.MOD_ID,"birch_stick"), new Item(new Item.Properties()));
+    public static final Item CHERRY_STICK = registerItem(ResourceLocation.fromNamespaceAndPath(MoreVanillaVariants.MOD_ID, "cherry_stick"), new Item(new Item.Properties()));
+    public static final Item CRIMSON_STICK = registerItem(ResourceLocation.fromNamespaceAndPath(MoreVanillaVariants.MOD_ID, "crimson_stick"), new Item(new Item.Properties()));
+    public static final Item DARK_OAK_STICK = registerItem(ResourceLocation.fromNamespaceAndPath(MoreVanillaVariants.MOD_ID, "dark_oak_stick"), new Item(new Item.Properties()));
+    public static final Item JUNGLE_STICK = registerItem(ResourceLocation.fromNamespaceAndPath(MoreVanillaVariants.MOD_ID, "jungle_stick"), new Item(new Item.Properties()));
+    public static final Item MANGROVE_STICK = registerItem(ResourceLocation.fromNamespaceAndPath(MoreVanillaVariants.MOD_ID, "mangrove_stick"), new Item(new Item.Properties()));
+    public static final Item PALE_OAK_STICK = registerItem(ResourceLocation.fromNamespaceAndPath(MoreVanillaVariants.MOD_ID, "pale_oak_stick"), new Item(new Item.Properties()));
+    public static final Item SPRUCE_STICK = registerItem(ResourceLocation.fromNamespaceAndPath(MoreVanillaVariants.MOD_ID, "spruce_stick"), new Item(new Item.Properties()));
+    public static final Item WARPED_STICK = registerItem(ResourceLocation.fromNamespaceAndPath(MoreVanillaVariants.MOD_ID, "warped_stick"), new Item(new Item.Properties()));
 
-    private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, Identifier.of(MoreVanillaVariants.MOD_ID, name), item);
-    }
 
     public static void registerModItems() {
         MoreVanillaVariants.LOGGER.info("Registering Mod Items for " + MoreVanillaVariants.MOD_ID);
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(ACACIA_STICK);
-            fabricItemGroupEntries.add(BIRCH_STICK);
-            fabricItemGroupEntries.add(CHERRY_STICK);
-            fabricItemGroupEntries.add(CRIMSON_STICK);
-            fabricItemGroupEntries.add(DARK_OAK_STICK);
-            fabricItemGroupEntries.add(JUNGLE_STICK);
-            fabricItemGroupEntries.add(MANGROVE_STICK);
-            fabricItemGroupEntries.add(PALE_OAK_STICK);
-            fabricItemGroupEntries.add(SPRUCE_STICK);
-            fabricItemGroupEntries.add(WARPED_STICK);
+        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.INGREDIENTS).register(entries -> {
+            entries.accept(ModItems.ACACIA_STICK);
+            entries.accept(ModItems.BIRCH_STICK);
+            entries.accept(ModItems.CHERRY_STICK);
+            entries.accept(ModItems.CRIMSON_STICK);
+            entries.accept(ModItems.DARK_OAK_STICK);
+            entries.accept(ModItems.JUNGLE_STICK);
+            entries.accept(ModItems.MANGROVE_STICK);
+            entries.accept(ModItems.PALE_OAK_STICK);
+            entries.accept(ModItems.SPRUCE_STICK);
+            entries.accept(ModItems.WARPED_STICK);
         });
     }
 }

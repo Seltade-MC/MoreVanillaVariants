@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "more-vanilla-variants",
+	"id": "morevanillavariants",
 	"version": "${version}",
 	"name": "More Vanilla Variants",
 	"description": "This is a mod that add variety for many objects",
@@ -13,7 +13,7 @@
 		"issues": "https://github.com/Seltade-MC/More-Vanilla-Variants/issues"
 	},
 	"license": "GPL-3.0",
-	"icon": "assets/more-vanilla-variants/icon.png",
+	"icon": "assets/morevanillavariants/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -21,7 +21,7 @@
 		]
 	},
 	"mixins": [
-		"more-vanilla-variants.mixins.json"
+		"morevanillavariants.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.18.4",
