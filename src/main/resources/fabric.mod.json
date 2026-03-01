@@ -17,14 +17,8 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.github.seltademc.MoreVanillaVariants"
+			"seltademc.MoreVanillaVariants"
 		],
-		"fabric-datagen": [
-			"com.github.seltademc.MoreVanillaVariantsDataGenerator"
-		],
-		"client": [
-			"com.github.seltademc.MoreVanillaVariantsClient"
-		]
 	},
 	"mixins": [
 		"more-vanilla-variants.mixins.json"
