@@ -1,14 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "sitcks",
   "pattern": [
-    "#",
-    "#"
+    "P",
+    "P"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:warped_planks"
-    }
+    "P": "minecraft:warped_planks"
   },
   "result": {
     "id": "morevanillavariants:warped_stick",

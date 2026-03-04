@@ -1,14 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "sitcks",
   "pattern": [
-    "#",
-    "#"
+    "P",
+    "P"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:cherry_planks"
-    }
+    "P": "minecraft:cherry_planks"
   },
   "result": {
     "id": "morevanillavariants:cherry_stick",

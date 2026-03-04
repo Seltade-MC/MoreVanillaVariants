@@ -1,14 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "sitcks",
   "pattern": [
-    "#",
-    "#"
+    "P",
+    "P"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:dark_oak_planks"
-    }
+    "P": "minecraft:dark_oak_planks"
   },
   "result": {
     "id": "morevanillavariants:dark_oak_stick",

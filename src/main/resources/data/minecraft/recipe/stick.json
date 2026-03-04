@@ -1,15 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "key": {
-    "A": {
-      "item": "minecraft:oak_planks"
-    }
-  },
+  "group": "sitcks",
   "pattern": [
-    "A",
-    "A"
+    "P",
+    "P"
   ],
+  "key": {
+    "P": "minecraft:oak_planks"
+  },
   "result": {
     "count": 4,
     "id": "minecraft:stick"

@@ -1,14 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "sitcks",
   "pattern": [
-    "#",
-    "#"
+    "P",
+    "P"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:jungle_planks"
-    }
+    "P": "minecraft:jungle_planks"
   },
   "result": {
     "id": "morevanillavariants:jungle_stick",

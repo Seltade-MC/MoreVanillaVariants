@@ -1,14 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "sitcks",
   "pattern": [
-    "#",
-    "#"
+    "P",
+    "P"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:birch_planks"
-    }
+    "P": "minecraft:birch_planks"
   },
   "result": {
     "id": "morevanillavariants:birch_stick",
