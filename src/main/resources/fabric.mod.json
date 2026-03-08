@@ -18,6 +18,9 @@
 	"entrypoints": {
 		"main": [
 			"seltademc.morevanillavariants.MoreVanillaVariants"
+		],
+		"fabric-datagen": [
+			"seltademc.morevanillavariants.MoreVanillaVariantsDataGenerator"
 		]
 	},
 	"mixins": [

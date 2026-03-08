@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "morevanillavariants:item/pale_oak_stick"
-  }
-}

@@ -3,9 +3,9 @@
   "category": "equipment",
   "group": "brushes",
   "key": {
-    "F": "minecraft:feather",
-    "C": "minecraft:copper_ingot",
-    "S": "minecraft:stick"
+    "C": "#c:ingots/copper",
+    "F": "#c:feathers",
+    "S": "morevanillavariants:dark_oak_stick"
   },
   "pattern": [
     "F",
@@ -14,6 +14,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "minecraft:brush"
+    "id": "morevanillavariants:dark_oak_brush"
   }
 }

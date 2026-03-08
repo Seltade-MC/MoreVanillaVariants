@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/brush",
+  "textures": {
+    "layer0": "morevanillavariants:item/mangrove_brush"
+  }
+}

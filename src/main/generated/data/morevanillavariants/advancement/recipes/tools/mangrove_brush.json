@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mangrove_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": "morevanillavariants:mangrove_stick"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "morevanillavariants:mangrove_brush"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mangrove_stick"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "morevanillavariants:mangrove_brush"
+    ]
+  }
+}

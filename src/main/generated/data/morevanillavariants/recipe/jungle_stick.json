@@ -3,7 +3,7 @@
   "category": "misc",
   "group": "sticks",
   "key": {
-    "P": "minecraft:oak_planks"
+    "P": "minecraft:jungle_planks"
   },
   "pattern": [
     "P",
@@ -11,6 +11,6 @@
   ],
   "result": {
     "count": 4,
-    "id": "minecraft:stick"
+    "id": "morevanillavariants:jungle_stick"
   }
 }
