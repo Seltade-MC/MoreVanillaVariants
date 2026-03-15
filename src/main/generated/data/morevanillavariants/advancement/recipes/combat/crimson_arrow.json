@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crimson_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": "morevanillavariants:crimson_stick"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "morevanillavariants:crimson_arrow"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_crimson_stick"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "morevanillavariants:crimson_arrow"
+    ]
+  }
+}

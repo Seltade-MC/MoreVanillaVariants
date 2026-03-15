@@ -14,6 +14,20 @@ public class ModLangEN extends FabricLanguageProvider {
     @Override
     public void generateTranslations(HolderLookup.Provider holderLookup, TranslationBuilder translationBuilder) {
 
+        //Arrows
+        translationBuilder.add(ModTags.MORE_ARROWS, "Arrows");
+        translationBuilder.add(ModItems.ACACIA_ARROW, "Acacia Arrow");
+        translationBuilder.add(ModItems.BAMBOO_ARROW, "Bamboo Arrow");
+        translationBuilder.add(ModItems.BIRCH_ARROW, "Birch Arrow");
+        translationBuilder.add(ModItems.CHERRY_ARROW, "Cherry Arrow");
+        translationBuilder.add(ModItems.CRIMSON_ARROW, "Crimson Arrow");
+        translationBuilder.add(ModItems.DARK_OAK_ARROW, "Dark Oak Arrow");
+        translationBuilder.add(ModItems.JUNGLE_ARROW, "Jungle Arrow");
+        translationBuilder.add(ModItems.MANGROVE_ARROW, "Mangrove Arrow");
+        translationBuilder.add(ModItems.PALE_OAK_ARROW, "Pale Oak Arrow");
+        translationBuilder.add(ModItems.SPRUCE_ARROW, "Spruce Arrow");
+        translationBuilder.add(ModItems.WARPED_ARROW, "Warped Arrow");
+
         //Brushes
         translationBuilder.add(ModTags.MORE_BRUSHES, "Brushes");
         translationBuilder.add(ModItems.ACACIA_BRUSH, "Acacia Brush");

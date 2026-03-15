@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_acacia_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": "morevanillavariants:acacia_stick"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "morevanillavariants:acacia_arrow"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_acacia_stick"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "morevanillavariants:acacia_arrow"
+    ]
+  }
+}

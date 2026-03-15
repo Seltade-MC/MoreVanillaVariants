@@ -4,10 +4,13 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.*;
 import seltademc.morevanillavariants.MoreVanillaVariants;
+
+import java.util.function.Function;
+
+import static net.minecraft.resources.Identifier.fromNamespaceAndPath;
 
 public class ModItems {
     public static void registerModItems() {
@@ -29,12 +32,35 @@ public class ModItems {
 
     public static Item registerBrushItem(String woodType) {
         BrushItem.Properties properties = new BrushItem.Properties().durability(64);
-        ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MoreVanillaVariants.MOD_ID, woodType + "_brush"));
+        ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, fromNamespaceAndPath(MoreVanillaVariants.MOD_ID, woodType + "_brush"));
         if (woodType.matches("crimson|warped")) {properties = properties.fireResistant();}
         BrushItem brush = new BrushItem(properties.setId(itemKey));
         Registry.register(BuiltInRegistries.ITEM, itemKey, brush);
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register((itemGroup) -> itemGroup.addBefore(Items.BRUSH, brush));
         return brush;
+    }
+
+    //Arrows
+
+
+    public static final Item ACACIA_ARROW = registerItem("acacia", ArrowItem::new);
+    public static final Item BAMBOO_ARROW = registerItem("bamboo", ArrowItem::new);
+    public static final Item BIRCH_ARROW = registerItem("birch", ArrowItem::new);
+    public static final Item CHERRY_ARROW = registerItem("cherry", ArrowItem::new);
+    public static final Item CRIMSON_ARROW = registerItem("crimson", ArrowItem::new);
+    public static final Item DARK_OAK_ARROW = registerItem("dark_oak", ArrowItem::new);
+    public static final Item JUNGLE_ARROW = registerItem("jungle", ArrowItem::new);
+    public static final Item MANGROVE_ARROW = registerItem("mangrove", ArrowItem::new);
+    public static final Item PALE_OAK_ARROW = registerItem("pale_oak", ArrowItem::new);
+    public static final Item SPRUCE_ARROW = registerItem("spruce", ArrowItem::new);
+    public static final Item WARPED_ARROW = registerItem("warped", ArrowItem::new);
+
+    public static ArrowItem registerItem(String woodType, Function<Item.Properties, Item> function) {
+        Item.Properties properties = new Item.Properties();
+        ResourceKey<Item> resourceKey = ResourceKey.create(Registries.ITEM, fromNamespaceAndPath(MoreVanillaVariants.MOD_ID, woodType + "_arrow"));
+        ArrowItem arrow = (ArrowItem) function.apply(properties.setId(resourceKey));
+        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT).register((itemGroup) -> itemGroup.addBefore(Items.ARROW, arrow));
+        return Registry.register(BuiltInRegistries.ITEM, resourceKey, arrow);
     }
 
     //Sticks
@@ -52,7 +78,7 @@ public class ModItems {
 
     public static Item registerWoodenItem(String woodType, String itemType) {
         Item.Properties properties = new Item.Properties();
-        ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MoreVanillaVariants.MOD_ID, woodType + "_" + itemType));
+        ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, fromNamespaceAndPath(MoreVanillaVariants.MOD_ID, woodType + "_" + itemType));
         if (woodType.matches("crimson|warped")) {properties = properties.fireResistant();}
         Item item = new Item(properties.setId(itemKey));
         Registry.register(BuiltInRegistries.ITEM, itemKey, item);

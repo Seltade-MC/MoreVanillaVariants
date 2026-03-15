@@ -25,6 +25,20 @@ public class ModItemModels extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerators)
     {
+        //Arrows
+        itemModelGenerators.generateFlatItem(ModItems.ACACIA_ARROW, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.BAMBOO_ARROW, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.BIRCH_ARROW, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.CHERRY_ARROW, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.CRIMSON_ARROW, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.DARK_OAK_ARROW, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.JUNGLE_ARROW, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.MANGROVE_ARROW, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.PALE_OAK_ARROW, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.SPRUCE_ARROW, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.WARPED_ARROW, ModelTemplates.FLAT_ITEM);
+
+        //Brushes
         generateBrush(itemModelGenerators, ModItems.ACACIA_BRUSH);
         generateBrush(itemModelGenerators, ModItems.BAMBOO_BRUSH);
         generateBrush(itemModelGenerators, ModItems.BIRCH_BRUSH);
@@ -36,6 +50,7 @@ public class ModItemModels extends FabricModelProvider {
         generateBrush(itemModelGenerators, ModItems.PALE_OAK_BRUSH);
         generateBrush(itemModelGenerators, ModItems.SPRUCE_BRUSH);
         generateBrush(itemModelGenerators, ModItems.WARPED_BRUSH);
+
         //Sticks
         itemModelGenerators.generateFlatItem(ModItems.ACACIA_STICK, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.BAMBOO_STICK, ModelTemplates.FLAT_HANDHELD_ITEM);

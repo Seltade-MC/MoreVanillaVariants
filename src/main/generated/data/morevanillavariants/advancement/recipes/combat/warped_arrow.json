@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "morevanillavariants:warped_arrow"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_warped_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": "morevanillavariants:warped_stick"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_warped_stick"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "morevanillavariants:warped_arrow"
+    ]
+  }
+}

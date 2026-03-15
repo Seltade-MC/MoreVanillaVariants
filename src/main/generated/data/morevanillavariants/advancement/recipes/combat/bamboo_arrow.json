@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bamboo_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": "morevanillavariants:bamboo_stick"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "morevanillavariants:bamboo_arrow"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bamboo_stick"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "morevanillavariants:bamboo_arrow"
+    ]
+  }
+}

@@ -24,6 +24,19 @@ public class ModRecipes extends FabricRecipeProvider {
             @Override
             public void buildRecipes() {
 
+                //Arrows
+                createArrowRecipe(ModItems.ACACIA_ARROW, ModItems.ACACIA_STICK);
+                createArrowRecipe(ModItems.BAMBOO_ARROW, ModItems.BAMBOO_STICK);
+                createArrowRecipe(ModItems.BIRCH_ARROW, ModItems.BIRCH_STICK);
+                createArrowRecipe(ModItems.CHERRY_ARROW, ModItems.CHERRY_STICK);
+                createArrowRecipe(ModItems.CRIMSON_ARROW, ModItems.CRIMSON_STICK);
+                createArrowRecipe(ModItems.DARK_OAK_ARROW, ModItems.DARK_OAK_STICK);
+                createArrowRecipe(ModItems.JUNGLE_ARROW, ModItems.JUNGLE_STICK);
+                createArrowRecipe(ModItems.MANGROVE_ARROW, ModItems.MANGROVE_STICK);
+                createArrowRecipe(ModItems.PALE_OAK_ARROW, ModItems.PALE_OAK_STICK);
+                createArrowRecipe(ModItems.SPRUCE_ARROW, ModItems.SPRUCE_STICK);
+                createArrowRecipe(ModItems.WARPED_ARROW, ModItems.WARPED_STICK);
+
                 //Brushes
                 createBrushRecipe(ModItems.ACACIA_BRUSH, ModItems.ACACIA_STICK);
                 createBrushRecipe(ModItems.BAMBOO_BRUSH, ModItems.BAMBOO_STICK);
@@ -50,6 +63,19 @@ public class ModRecipes extends FabricRecipeProvider {
                 createStickRecipe(ModItems.PALE_OAK_STICK, Items.PALE_OAK_PLANKS, 4, "pale_oak_stick");
                 createStickRecipe(ModItems.SPRUCE_STICK, Items.SPRUCE_PLANKS, 4, "spruce_stick");
                 createStickRecipe(ModItems.WARPED_STICK, Items.WARPED_PLANKS, 4, "warped_stick");
+            }
+
+            private void createArrowRecipe(Item arrow, Item stick)   {
+                shaped(RecipeCategory.COMBAT, arrow, 4)
+                        .pattern("L")
+                        .pattern("S")
+                        .pattern("F")
+                        .define('L', Items.FLINT)
+                        .define('S', stick)
+                        .define('F', ModTags.FEATHERS)
+                        .group("arrows")
+                        .unlockedBy(getHasName(stick), has(stick))
+                        .save(output);
             }
 
             private void createBrushRecipe(Item brush, Item stick)   {

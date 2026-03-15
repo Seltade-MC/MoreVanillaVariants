@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "arrows",
+  "key": {
+    "F": "#c:feathers",
+    "L": "minecraft:flint",
+    "S": "morevanillavariants:warped_stick"
+  },
+  "pattern": [
+    "L",
+    "S",
+    "F"
+  ],
+  "result": {
+    "count": 4,
+    "id": "morevanillavariants:warped_arrow"
+  }
+}

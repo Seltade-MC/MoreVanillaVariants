@@ -23,9 +23,11 @@ public class ModTags extends FabricTagProvider.ItemTagProvider {
     }
 
     public static final TagKey<Item> MORE_STICKS = createTag(MoreVanillaVariants.MOD_ID, "sticks");
+    public static final TagKey<Item> MORE_ARROWS = createTag(MoreVanillaVariants.MOD_ID, "arrows");
     public static final TagKey<Item> MORE_BRUSHES = createTag(MoreVanillaVariants.MOD_ID, "brushes");
     public static final TagKey<Item> WOODEN_RODS = createTag("c", "rods/wooden");
     public static final TagKey<Item> BRUSH_TOOLS = createTag("c", "tools/brush");
+    public static final TagKey<Item> ARROWS = createTag("c", "arrows");
     public static final TagKey<Item> FEATHERS = createTag("c", "feathers");
     public static final TagKey<Item> COPPER_INGOTS = createTag("c", "ingots/copper");
 
@@ -59,6 +61,23 @@ public class ModTags extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PALE_OAK_BRUSH)
                 .add(ModItems.SPRUCE_BRUSH)
                 .add(ModItems.WARPED_BRUSH);
+
+        valueLookupBuilder(MORE_ARROWS)
+                .add(Items.ARROW)
+                .add(ModItems.ACACIA_ARROW)
+                .add(ModItems.BAMBOO_ARROW)
+                .add(ModItems.BIRCH_ARROW)
+                .add(ModItems.CHERRY_ARROW)
+                .add(ModItems.CRIMSON_ARROW)
+                .add(ModItems.DARK_OAK_ARROW)
+                .add(ModItems.JUNGLE_ARROW)
+                .add(ModItems.MANGROVE_ARROW)
+                .add(ModItems.PALE_OAK_ARROW)
+                .add(ModItems.SPRUCE_ARROW)
+                .add(ModItems.WARPED_ARROW);
+
+        valueLookupBuilder(ARROWS)
+                .addTag(MORE_ARROWS);
 
         valueLookupBuilder(WOODEN_RODS)
                 .addTag(MORE_STICKS);
